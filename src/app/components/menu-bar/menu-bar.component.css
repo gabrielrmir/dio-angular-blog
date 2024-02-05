@@ -1,0 +1,13 @@
+.menu-bar > ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-bar > ul > li {
+  list-style: none;
+  margin-right: 20px;
+}
+
+.menu-bar > ul > li > a:hover {
+  text-decoration: underline;
+}
