@@ -1,11 +1,11 @@
-interface Data {
+interface CardData {
   id: number,
   title: string,
   description: string,
   cover: string
 }
 
-function generateData(id: number): Data {
+function generateData(id: number): CardData {
   return {
     id,
     title: 'Lorem ipsum dolor sit amet',
@@ -14,7 +14,7 @@ function generateData(id: number): Data {
   }
 }
 
-const dataFake: Data[] = [];
+const dataFake: CardData[] = [];
 for (let i = 1; i <= 19; i++) {
   dataFake.push(generateData(i));
 }
