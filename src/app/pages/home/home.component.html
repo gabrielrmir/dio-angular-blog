@@ -1,5 +1,9 @@
 <app-menu-title></app-menu-title>
 
-<app-cards-container
-  [cards]="cards.slice(0,4)"
-/>
+<ng-template ngFor let-card [ngForOf]="cards" let-i="index">
+  <app-cards-container
+    *ngIf="i%4 === 0"
+    [cards]="cards.slice(i,i+4)"
+    [flip]="(i/4)%2 !== 0"
+  />
+</ng-template>
