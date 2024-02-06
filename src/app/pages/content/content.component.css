@@ -1,0 +1,29 @@
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 900px;
+  margin: 0 auto;
+}
+
+.content__back {
+  align-self: flex-start;
+}
+
+.content__back > a:hover {
+  text-decoration: underline;
+}
+
+.content__cover > img {
+  border-radius: 4px;
+  width: 500px;
+  height: 300px;
+}
+
+.content__title {
+  margin-top: 15px;
+}
+
+.content__description {
+  margin-top: 15px;
+}
