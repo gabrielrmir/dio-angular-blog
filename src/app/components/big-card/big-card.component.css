@@ -1,0 +1,27 @@
+.big-card {
+  width: 400px;
+  margin-right: 15px;
+}
+
+.big-card__photo {
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+  background-color: black;
+}
+
+.big-card__photo > img {
+  width: 100%;
+  height: 100%;
+}
+
+.big-card__title > h1 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.big-card__description > p {
+  color: gray;
+  margin-top: 10px;
+}
