@@ -1,13 +1,22 @@
-.menu-bar > ul {
-  display: flex;
-  flex-direction: row;
+.menu-bar {
+  margin-top: 15px;
 }
 
-.menu-bar > ul > li {
+.menu-bar__links > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.menu-bar__links > ul > li {
   list-style: none;
   margin-right: 20px;
 }
 
-.menu-bar > ul > li > a:hover {
+.menu-bar__links > ul > li > a:hover {
   text-decoration: underline;
+}
+
+.menu-bar__separator {
+  margin-top: 15px;
 }
