@@ -19,4 +19,4 @@ for (let i = 1; i <= 19; i++) {
   dataFake.push(generateData(i));
 }
 
-export {dataFake};
+export {dataFake, CardData};

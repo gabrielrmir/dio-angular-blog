@@ -1,0 +1,39 @@
+<div class="container" *ngIf="!flip; else flipBlock">
+  <div class="container__left">
+    <ng-template ngFor let-card [ngForOf]="cards" let-isLast="last">
+      <app-small-card
+        *ngIf="!isLast"
+        [title]="card.title"
+        [cover]="card.cover"
+      />
+    </ng-template>
+  </div>
+  <div class="container__right">
+    <app-big-card
+      [title]="lastCard.title"
+      [cover]="lastCard.cover"
+      [description]="lastCard.description"
+    />
+  </div>
+</div>
+
+<ng-template #flipBlock>
+  <div class="container">
+    <div class="container__left">
+      <app-big-card
+        [title]="firstCard.title"
+        [cover]="firstCard.cover"
+        [description]="firstCard.description"
+      />
+    </div>
+    <div class="container__right">
+      <ng-template ngFor let-card [ngForOf]="cards" let-isFirst="first">
+        <app-small-card
+          *ngIf="!isFirst"
+          [title]="card.title"
+          [cover]="card.cover"
+        />
+      </ng-template>
+    </div>
+  </div>
+</ng-template>
